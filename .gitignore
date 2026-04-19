@@ -1,0 +1,33 @@
+# --- Compilation Outputs ---
+# The actual executable (named 'app' in your CMakeLists.txt)
+app
+*.o
+*.obj
+*.out
+
+# --- CMake Artifacts ---
+# We never track the build folder because it contains local machine paths
+build/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+compile_commands.json
+
+# --- VS Code Folders ---
+.vscode/
+# (Optional) If you want to share your VS Code tasks/settings, 
+# you can comment out the line above and only ignore the local debug files:
+# .vscode/launch.json
+# .vscode/tasks.json
+
+# --- OS Specific ---
+.DS_Store
+Thumbs.db
+
+# --- Database Specific ---
+# Since you're building a database, ignore the actual data files
+# so you don't commit your local test data.
+*.db
+*.dat
+*.bin
